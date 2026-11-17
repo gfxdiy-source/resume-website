@@ -135,22 +135,76 @@ section h2 {
     margin-left: 20px;
 }
 
-/* ---------- Skills cards (inline-block) ---------- */
-.skill-box {
+/* ---------- Profile photo ---------- */
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+/* ---------- Project cards (inline-block) ---------- */
+.project {
     display: inline-block;
-    width: 48%;
+    width: 31%;
     vertical-align: top;
     background-color: #f5f3ef;
-    border-left: 4px solid #52796f;
+    border-top: 4px solid #52796f;
     padding: 12px 15px;
     margin: 0 1% 12px 0;
+    min-height: 185px;
 }
 
-.skill-box h3 {
+.project h3 {
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
-.skill-box p {
+.project p {
+    font-size: 14px;
+}
+
+.tools {
+    margin-top: 8px;
+    color: #52796f;
+    font-weight: 600;
+}
+
+/* ---------- Skills table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    background-color: #2f3e46;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f3ef;
+}
+
+/* ---------- Hobbies ---------- */
+.hobby-list {
+    list-style: none;
+}
+
+.hobby-list li {
+    display: inline-block;
+    background-color: #cad2c5;
+    padding: 6px 14px;
+    margin: 0 8px 8px 0;
+    border-radius: 20px;
     font-size: 14px;
 }
 
@@ -183,7 +237,8 @@ footer {
         width: 92%;
     }
 
-    .skill-box {
+    .project {
         width: 100%;
+        min-height: auto;
     }
 }
